@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font awesome cdn link -->
-    <script
-      src="https://kit.fontawesome.com/321bd7016e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-  </head>
-  <body>
-      <section class="bg-image">
-        <header>
-          <div class="logo">
-            <h2>Adventure Game</h2>
-          </div>
-          <nav>
-            <a href="#">home</a>
-            <a href="#">contact</a>
-            <a href="#">about</a>
-            <a href="#">service</a>
-            <a href="#">news</a>
-            <a href="#">gallery</a>
-          </nav>
-        </header>
-      </section>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome cdn link -->
+  <script src="https://kit.fontawesome.com/321bd7016e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h2>Adventure Game</h2>
+    </div>
+    <nav id="nav">
+      <a href="#">home</a>
+      <a href="#">contact</a>
+      <a href="#">about</a>
+      <a href="#">service</a>
+      <a href="#">news</a>
+      <a href="#">gallery</a>
+    </nav>
+    <div class="fa fa-bars menu" id="menu" style="color: #fff;"></div>
+  </header>
+  <section class="bg-image">
+      <img src="./bnr1.jpg" alt="">
+    <div class="content">
+      <div class="sub-content">
+        <h2>
+          God of war - kratos - sony santa monica
+        </h2>
+        <p>
+          Battlefield 4 - game - explosion - digital illusions
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec pellentesque ex. Morbi iaculis mi in varius
+          auctor. Nullam feugiat erat ex, eu vehicula velit efficitur non.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    let menu = document.getElementById('menu')
+    let nav = document.getElementById('nav')
+    menu.addEventListener('click', () => {
+      menu.classList.toggle('fa-times')
+      nav.classList.toggle('active')
+    })
+  </script>
+</body>
+
 </html>
